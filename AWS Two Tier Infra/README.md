@@ -9,3 +9,11 @@
 * Output Values: These are return values of a terraform module that can be used by other configurations.
 * Plan: It is one stage where it determines what needs to be created, updated, or destroyed.
 * Apply: It is the last stage where it applies the changes of the infrastructure in order to move to the desired state.
+
+# Two Tier Infrastructure AWS
+* ec2alb - two EC2 instances and Application Load Balancer
+* igwrout - Internet Gateway, Route table, Route Table Association
+* main - Configure AWS provider
+* rds - MySQL database, Database Subnet group, Security group for database.
+* sg - Security groups for VPC, ALB.
+* vpc - Create VPC, 2 Public Subnet, 2 Private Subnet.
